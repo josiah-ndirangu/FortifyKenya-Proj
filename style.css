@@ -1,0 +1,162 @@
+
+  /* .overlay-text {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+  } */
+  body{
+    overflow-x: hidden;
+  }
+
+  .text-responsive {
+    font-size: 1.5rem; /* Default font size for small screens */
+    
+  }
+  @media (min-width: 576px) {
+    .text-responsive {
+      font-size: 1.5rem; /* Font size for small and larger screens */
+    }
+  }
+  @media (min-width: 768px) {
+    .text-responsive {
+      font-size: 2rem; /* Font size for medium and larger screens */
+    }
+  }
+  @media (min-width: 992px) {
+    .text-responsive {
+      font-size: 3.5rem; /* Font size for large and larger screens */
+    }
+  }
+  @media (min-width: 1200px) {
+    .text-responsive {
+      font-size: 6rem; /* Font size for extra-large and larger screens */
+    }
+  }
+  .text2-responsive {
+    font-size: 1rem; /* Default font size for small screens */
+  }
+  @media (min-width: 576px) {
+    .text2-responsive {
+      font-size: 1.5rem; /* Font size for small and larger screens */
+    }
+  }
+  @media (min-width: 768px) {
+    .text2-responsive {
+      font-size: 2rem; /* Font size for medium and larger screens */
+    }
+  }
+  @media (min-width: 992px) {
+    .text2-responsive {
+      font-size: 3.5rem; /* Font size for large and larger screens */
+    }
+  }
+  @media (min-width: 1200px) {
+    .text2-responsive {
+      font-size: 4rem; /* Font size for extra-large and larger screens */
+    }
+  }
+  .section3 {
+    width: 90%;
+    margin-inline: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.section3 h1 {
+    text-align: center;
+}
+.section3 h2 {
+    /* font-size: 50px; */
+    text-transform: capitalize;
+    text-align: center;
+}
+.section3 p {
+    text-align: center;
+}
+.section-description {
+  font-size: calc(1.7rem + 1.2vw);
+}
+ /* Apply initial hidden state and transition to all elements with data-scroll-zoom */
+ [data-scroll-zoom] {
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Apply visible state when the element has the visible class */
+[data-scroll-zoom].visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card {
+  margin: 0;
+  position: relative;
+}
+.card-img-top {
+  cursor: pointer;
+}
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.card:hover .hover-overlay {
+  opacity: 1;
+}
+/* .hover-overlay a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+} */
+
+/* .card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-bottom: 1px solid #0056b3;
+  text-align: center;
+  padding: 15px;
+}
+.card-body {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+.list-unstyled li {
+  border-bottom: 1px solid #dee2e6;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+.list-unstyled li:last-child {
+  border-bottom: none;
+}
+.list-unstyled li strong {
+  color: #007bff;
+}
+@media (max-width: 576px) {
+  .card {
+      margin: 0 10px;
+  }
+} */
